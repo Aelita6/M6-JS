@@ -1,12 +1,8 @@
-
-const userText = prompt('Введите текст');
-
-const userTextField = document.querySelector('a');
-
-
-document.querySelector('a').addEventListener('click', () => {
-    prompt ('Измените текст ссылки')
+link  = document.querySelector('a');
+addEventListener('click', () => {
+	let content = prompt('Введите текст');	
+    link.textContent = content;
+    link.preventDefault();
 });
 
-
-userTextField.textContent = userText;
+  
